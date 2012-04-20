@@ -1,0 +1,9 @@
+I write this set of scripts to support an end-term assignment I created for a 2006 class on modeling of complex systems that I taught at Cornell. The point was to provide a testbed on which to try out planning, scheduling and control algorithms. 
+
+The code sets up stacked blocks and a set of 3 cranes that move the blocks around. There is support for both non-dynamic movement and dynamic (swinging pendulum) movement. 
+
+It was partly inspired by the blocks world model used in AI and partly by container handling cranes and the classic pendulum model used in control theory (though not inverted).
+
+Run blocksdaemon.m in Matlab to initialize a blocksworld scene.
+
+I'll add more documentation soon. 
