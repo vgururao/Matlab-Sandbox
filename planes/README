@@ -1,0 +1,5 @@
+This is a simple set of scripts to visualize airplanes that fly around using simple primitives (straight ahead, left, right...)
+
+Run planesdemo.m to watch a few planes randomly flying around. 
+
+I intended to use this as part of a larger battlefield simulation model, but never did get around to incorporating it. But this is a good basic testbed for UAV algorithms that don't involve complicated dynamics) so search patterns etc.
