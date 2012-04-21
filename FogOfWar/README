@@ -1,0 +1,10 @@
+This is the "Fog of War" simulation mentioned in Tempo.
+
+The video of the simulation is at: http://www.youtube.com/watch?v=iIRzm7cYvLU 
+
+The code is hiersim.m
+
+At the moment it doesn't appear to be working, but feel free to hack at it.
+
+The explanation (technical) is in this paper, in the hierarchical abstraction section in the file chapter17.pdf
+

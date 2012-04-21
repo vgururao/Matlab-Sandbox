@@ -1,1 +1,12 @@
-Just some scripts I've written over the years for school or work.
+Some fun scripts  and mini-projects from over the years. I've written over the years for school (both teaching and learning) or work.
+
+Each folder is a mini-project, sometimes with just one file.
+
+Current contents:
+
+1. Trapeze Blocks: a simulation domain that's kinda like a container shipping yard.
+
+2. Planes: simple visualization code for multiple UAVs flying around.
+
+3. Fog of War: the simulation mentioned in Tempo.
+
