@@ -2,4 +2,8 @@ This is the code from the final project for the a complex systems modeling cours
 
 It is a mashup of the classic AI model known as Blocks World, along with swinging pendulum dynamics that are a classic problem in control theory.
 
+Check out this YouTube video to get a sense of what the code does.
+
+http://youtu.be/EBxfAukjXpc
+
 If you want to play with the code/project in Matlab, read the finalproject.doc document for an introduction to the code.
