@@ -8,13 +8,12 @@ function tbw=trapblocksinit
 % TO DO: Update the position initialization routine to work with blockWidth
 % and blockHeight units
 % 
-
+global tbw
 % Colors
 tbw.gripOpenColor=[0.8 0.8 0.8];
 tbw.gripClosedColor=[0.5 0.5 0.5];
 tbw.colorVec=char('r','g','b');
 tbw.rodCartColor=[0.5 0.5 0.5];
-
 
 WCHOICE=menu('New trapeze blocks world', 'Default Unstacked','Default Stacked','Occupancy Distribution','Interactive definition');
 switch WCHOICE
@@ -123,8 +122,6 @@ switch WCHOICE
                     bnum=input(['Block number, 1 - ' num2str(tbw.numBlocks)  ', (do not repeat): ']);
                     tbw.xc(6*(bnum-1)+1:6*(bnum-1)+6)=[xpos*facX 0 (ypos-1)*facY 0 0 0];
                     tempcol=input('Color (R=1, G=2, B=3): ');
-                    xpos
-                    ypos
                     set(temph(xpos+1,ypos),'FaceColor',tbw.colorVec(tempcol));
                     text(xpos+0.5,ypos-0.5,num2str(bnum));
                     tbw.blockCols(bnum)=tempcol;

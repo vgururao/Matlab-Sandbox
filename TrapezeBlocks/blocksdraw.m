@@ -7,12 +7,8 @@ function [gh]=blocksdraw(tbw,gh,axh,FLAG)
 %
 %   SEE ALSO: TRAPBLOCKSINIT
 %
-%
-%   TO DO: Initial frame code and update code are right now almost
-%   identical. Either make initial rendering more fancy, OR functionalize
 
-axes(gca)
-
+axes(gca);
 if strcmp(FLAG,'INIT')    
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%% Initialization graphics
@@ -20,6 +16,7 @@ if strcmp(FLAG,'INIT')
     cla
     hold on
     axis equal
+    grid on
     blockWidth=max(tbw.blockX)-min(tbw.blockX);
     blockHeight=max(tbw.blockY)-min(tbw.blockY);
     OffX=blockWidth/2;
@@ -94,7 +91,6 @@ if strcmp(FLAG,'INIT')
         gh.Gn(k)=text(xoff-0.2,yoff,tbw.gripNames(k));
         set(gh.Gn,'FontSize',10)
         set(gh.Gn,'FontWeight','b')
-        
     end
 elseif strcmp(FLAG,'UPDATE')
     % Update  the blocks
@@ -147,5 +143,3 @@ elseif strcmp(FLAG,'UPDATE')
         set(gh.Gn(k),'Position',[xoff-0.2 yoff]);        
     end
 end
-
-function updateStuff
