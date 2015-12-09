@@ -1,6 +1,6 @@
 % made up words
 
-consonants={'a','b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'};
+consonants={'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'};
 vowels={'a','e','i','o','u'};
 s={};
 for k=1:10
@@ -11,4 +11,4 @@ for k=1:10
     end
 end
 
-s
+disp(s);
