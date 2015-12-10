@@ -5,7 +5,8 @@
 fullAlph={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 
 % Define the transition probability matrix
-transMat=rand(26,26);
+%transMat=rand(26,26);
+transMat=Tmat;
 for k=1:26
     transMat(k,:)=transMat(k,:)/sum(transMat(k,:));
 end
