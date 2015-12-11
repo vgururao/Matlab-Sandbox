@@ -7,7 +7,7 @@ fullAlph={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r
 % Define the transition probability matrix
 %transMat=rand(26,26);
 transMat=Tmat;
-for k=1:26
+for k=1:27
     transMat(k,:)=transMat(k,:)/sum(transMat(k,:));
 end
 
@@ -16,10 +16,15 @@ s={};
 for k=1:10
     s{k}='';
     lastInd=ceil(26*rand);
-    for j=1:6        
+    INWORD=1;
+    while INWORD        
         newInd=sampleDist(transMat(lastInd,:));
-        s{k}=strcat(s{k},fullAlph{lastInd});
-        lastInd=newInd;
+        if lastInd<27
+            s{k}=strcat(s{k},fullAlph{lastInd});
+            lastInd=newInd;
+        else
+            INWORD=0;
+        end
     end
 end
 
