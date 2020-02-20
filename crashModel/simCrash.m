@@ -1,4 +1,4 @@
-function simCrash
+itfunction simCrash
 
 global canvasSize
 
